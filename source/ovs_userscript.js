@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Open Veracity Standard (OVS) Overlay & Sweeper
 // @namespace    OpenVeracity
-// @version      0.1
+// @version      0.2
 // @description  Validates OVS metadata and actively neutralizes fake/spoofed OVS HTML badges.
 // @author       OpenVeracity@users.noreply.github.com
 // @match        *://*/*
@@ -26,7 +26,7 @@
         try {
             const parsedUrl = new URL(url);
             return WHITELISTED_SOURCES.some(domain => {
-                const regex = new RegExp('(^|\\.)' + domain.replace(/\./g, '\\.') + '$');
+                const regex = new RegExp('(^|\\.)' + domain.replace(/\./g, '\\.') + '$', 'i');
                 return regex.test(parsedUrl.hostname);
             });
         } catch (e) {
