@@ -9,6 +9,8 @@
 // @grant        GM_xmlhttpRequest
 // @connect      *
 // @run-at       document-end
+// @updateURL    https://raw.githubusercontent.com/OpenVeracity/ovs-demo/refs/heads/main/source/ovs_userscript.js
+// @downloadURL  https://raw.githubusercontent.com/OpenVeracity/ovs-demo/refs/heads/main/source/ovs_userscript.js
 // ==/UserScript==
 
 (function() {
